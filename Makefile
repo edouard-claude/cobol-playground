@@ -7,7 +7,7 @@ COBCFLAGS = -x -free
 # Fichiers sources et exécutables
 SRC_DIR = src/main
 BIN_DIR = bin
-SRCS = $(wildcard $(SRC_DIR)/hello/*.cbl $(SRC_DIR)/wallet/*.cbl $(SRC_DIR)/booking/*.cbl $(SRC_DIR)/transation/*.cbl)
+SRCS = $(wildcard $(SRC_DIR)/hello/*.cbl $(SRC_DIR)/wallet/*.cbl $(SRC_DIR)/booking/*.cbl $(SRC_DIR)/transation/*.cbl $(SRC_DIR)/pencil-inventory/*.cbl)
 EXECS = $(patsubst $(SRC_DIR)/%.cbl,$(BIN_DIR)/%,$(SRCS))
 
 .PHONY: all clean
